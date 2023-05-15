@@ -1,3 +1,16 @@
-命令         示例                           说明
-help        |help                         |帮助信息
-version     |version                      |版本信息
+命令          示例                                         说明
+help         |help                                       |帮助信息
+version      |version                                    |版本信息
+set-password |set-password "123456"                      |设置默认密钥
+get-password |get-password "123456"                      |查看默认密钥
+                                                         |未设置密钥时将使用以下方式获取密钥
+                                                         |1、从启动命令中获取：-Djasypt.encryptor.password=密码
+                                                         |2、从系统配置中获取：jasypt.encryptor.password=密码
+                                                         |3、从环境变量中获取：JAVA_JASYPT_PASSWORD=密码
+encrypt      |encrypt "plain text"                       |加密
+             |encrypt "plain text" "123456"              |使用指定密钥加密
+decrypt      |decrypt "cipher text"                      |解密
+             |decrypt "cipher text" "123456"             |使用指定密钥解密
+check        |check "plain text" "plain text"            |校验
+             |check "plain text" "cipher text" "123456"  |使用指定密钥校验
+exit         |exit                                       |退出

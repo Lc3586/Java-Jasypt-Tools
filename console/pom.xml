@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>top.lctr</groupId>
-            <artifactId>project-extension-standard</artifactId>
+            <artifactId>project-extension-console</artifactId>
             <version>${project.extension.model.version}</version>
         </dependency>
 

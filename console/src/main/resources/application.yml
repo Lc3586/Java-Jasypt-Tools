@@ -6,8 +6,8 @@ logging:
 
 # Spring配置
 spring:
-  profiles:
-    active: @env@-@os@
+#  profiles:
+#    active: @env@-@os@
   # json配置
   jackson:
     mapper:

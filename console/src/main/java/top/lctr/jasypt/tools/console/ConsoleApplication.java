@@ -1,7 +1,6 @@
-package com.turui;
+package top.lctr.jasypt.tools.console;
 
 import ch.qos.logback.core.ConsoleAppender;
-import com.turui.config.ServiceApiConfig;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,8 +21,6 @@ public class ConsoleApplication {
         System.out.printf("\033[32mConsoleApplication.main\033[0m \033[33margs\033[0m : %s\r\n%n",
                           String.join(" ",
                                       args));
-
-        ServiceApiConfig.rootUrl = args[0];
 
         System.out.printf("\033[34mslf4j\033[0m ：%s%n",
                           LoggerFactory.class.getResource(""));
