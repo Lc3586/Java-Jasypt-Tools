@@ -91,7 +91,8 @@ public class CommandHandler {
                             .toAbsolutePath()
                             .toString();
             FileExtension.extractFileFromJar("BOOT-INF/classes/help.txt",
-                                             helpFile);
+                                             helpFile,
+                                             true);
         } catch (Exception ex) {
             logger.error(String.format("%s：提取文件时发生异常",
                                        name),
